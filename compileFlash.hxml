@@ -1,0 +1,5 @@
+-cp src
+-swf bin/mandelbrot.swf 
+-swf-header 1024:768:40:FF0000
+-main Mandelbrot
+-cmd open bin/mandelbrot.swf
