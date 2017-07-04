@@ -10,6 +10,9 @@ import phoenix.RenderTexture;
 #elseif flash 
 import flash.display.Bitmap;
 import flash.display.BitmapData;
+#elseif kha
+import kha.Image;
+import kha.graphics4.TextureFormat;
 #end
 
 @:access(Pixels.width)
@@ -66,6 +69,11 @@ abstract Mandelbrot( Pixels ) from Pixels to Pixels {
         flash.Lib.current.stage.addChild( bitmap );
         return bitmap;
     } 
+    #elseif kha
+    public function getKhaImage():Image {
+        var image = Image.fromBytes( this.bytes, this.width, this.height, TextureFormat.RGBA32 );
+        return image;
+    }
     #end
     inline function paint(x, y, iter, color ) {
         var red = iter > MAX_ITER? 0 : iter * color;
