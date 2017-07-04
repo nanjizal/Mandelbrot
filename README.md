@@ -9,4 +9,6 @@ Now uses hxPixels with flash and luxe demos ( [hxPixels](https://github.com/azra
 
 [Kha demo](https://rawgit.com/nanjizal/Mandelbrot/master/build/html5/index.html)
 
+( for Kha usage you will need to add the Kha folder from Empty as not included ).
+
 ![mandelbrot](https://user-images.githubusercontent.com/20134338/27806591-5dc61162-6033-11e7-870a-28576acc3dcb.png)
